@@ -1,13 +1,6 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
 window.onload = function() {
   //write your code here
-  const who = [`Mi perro`, `Mi abuela`, `El cartero`, `Mi pajaro`];
+  const who = [`mi perro`, `mi abuela`, `el cartero`, `mi pajaro`];
   const action = [`se comio`, `orino en`, `aplasto`, `rompio`];
   const what = [`mi tarea`, `mi telefono`, `el coche`];
   const when = [
@@ -15,7 +8,7 @@ window.onload = function() {
     `mientras dormia.`,
     `mientras hacia ejercicio`,
     `durante el almuerzo`,
-    `mientras rezaba`
+    `mientras rezaba`,
   ];
 
   function excusaRandom() {
@@ -26,7 +19,6 @@ window.onload = function() {
 
     return `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}.`;
   }
-  document.querySelector("#excusa").innerHTML = excusaRandom();
 
   console.log(excusaRandom());
 };
